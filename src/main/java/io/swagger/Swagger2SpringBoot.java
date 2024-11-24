@@ -6,11 +6,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
-import springfox.documentation.oas.annotations.EnableOpenApi;
-
 @SpringBootApplication
-@EnableOpenApi
-@ComponentScan(basePackages = { "io.swagger", "io.swagger.api" , "io.swagger.configuration"})
+@ComponentScan(basePackages = { "io.swagger", "io.swagger.api", "io.swagger.configuration" })
 public class Swagger2SpringBoot implements CommandLineRunner {
 
     @Override
@@ -31,6 +28,5 @@ public class Swagger2SpringBoot implements CommandLineRunner {
         public int getExitCode() {
             return 10;
         }
-
     }
 }
